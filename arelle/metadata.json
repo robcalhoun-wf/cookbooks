@@ -1,0 +1,30 @@
+{
+  "groupings": {
+  },
+  "description": "Installs/Configures arelle",
+  "recommendations": {
+  },
+  "recipes": {
+    "arelle::default": "Installed arelle"
+  },
+  "suggestions": {
+  },
+  "attributes": {
+  },
+  "conflicting": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "providing": {
+  },
+  "version": "0.0.1",
+  "license": "All rights reserved",
+  "maintainer": "Rob Calhoun",
+  "name": "arelle",
+  "replacing": {
+  },
+  "dependencies": {
+  },
+  "platforms": {
+  },
+  "maintainer_email": "rob.calhoun@webfilings.com"
+}
