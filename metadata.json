@@ -1,0 +1,30 @@
+{
+    "name": "arelle",
+    "description": "arelle is an xbrl validator",
+    "long_description": "I think the short one is good enough for now...",
+    "maintainer": "Webfilings.com",
+    "maintainer_email": "rob.calhoun@webfilings.com",
+    "license": "All rights reserved",
+    "platforms": {
+  },
+  "dependencies": {
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "arelle::default": "Sets up arelle"
+  },
+  "version": "0.0.1"
+}

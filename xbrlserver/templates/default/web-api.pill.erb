@@ -1,0 +1,32 @@
+ENV['HOME'] = '<%= @install_dir %>'
+
+Bluepill.application("web-api") do |app|
+  app.uid = '<%= @user %>'
+  app.gid = '<%= @group %>'
+  
+  
+  
+  
+  app.process("web-api") do |process|
+    process.start_command = "<%= @bin %>"
+    process.working_dir = "<%= @install_dir %>"
+    process.pid_file = "<%= @pid %>"
+    process.environment = {"ARELLE_PYTHON_BIN" => "<%= @python_bin %>",
+                           "ARELLE_WORKING_DIR" => "<%= @install_dir %>",
+                           "LANG" => "en_US.UTF-8",
+                           "LC_ALL" => "en_US.UTF-8"}
+    # use user specific TMP directory
+    tmp_dir = "<%= @tmp_dir %>"
+    if File.exist? tmp_dir
+       process.environment["TMP_DIR"] = tmp_dir
+    end
+
+    process.stdout = process.stderr = "<%= @log_file %>"
+    
+    process.daemonize = true
+    
+    process.start_grace_time = 20.seconds
+    process.stop_grace_time = 10.seconds
+    process.restart_grace_time = 30.seconds
+  end
+end

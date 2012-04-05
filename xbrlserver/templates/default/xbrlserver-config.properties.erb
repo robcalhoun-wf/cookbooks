@@ -1,0 +1,11 @@
+ARELLE_PYTHON_BIN=<%= node[:xbrlserver][:python_bin] %>
+ARELLE_MODULE=<%= node[:xbrlserver][:arelle_module] %>
+ARELLE_WORKING_DIR=<%= node[:xbrlserver][:home] %>
+ARELLE_WORKERS=<%= node[:xbrlserver][:arelle_workers] %>
+
+TMP_DIR=<%= node[:xbrlserver][:tmp_dir] %>
+XBRL_CACHE_DIR=<%= node[:xbrlserver][:cache] %>
+
+RULE_URIS=<%= node[:xbrlserver][:default_business_rules].join(", ") %>
+   
+
