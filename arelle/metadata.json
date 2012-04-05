@@ -1,30 +1,31 @@
 {
-  "groupings": {
+  "version": "0.0.1",
+  "replacing": {
   },
-  "description": "Installs/Configures arelle",
-  "recommendations": {
+  "maintainer": "Rob Calhoun",
+  "platforms": {
   },
+  "maintainer_email": "rob.calhoun@webfilings.com",
   "recipes": {
     "arelle::default": "Installed arelle"
-  },
-  "suggestions": {
   },
   "attributes": {
   },
   "conflicting": {
   },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "name": "arelle",
+  "groupings": {
+  },
   "providing": {
   },
-  "version": "0.0.1",
-  "license": "All rights reserved",
-  "maintainer": "Rob Calhoun",
-  "name": "arelle",
-  "replacing": {
+  "recommendations": {
   },
   "dependencies": {
+    "python": ">= 0.0.0"
   },
-  "platforms": {
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "suggestions": {
   },
-  "maintainer_email": "rob.calhoun@webfilings.com"
+  "license": "All rights reserved",
+  "description": "Installs/Configures arelle"
 }
